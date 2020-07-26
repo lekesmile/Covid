@@ -1,38 +1,56 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.App__h1 {
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* .Subhead__maindiv {
+  display: flex;
+  margin: 30px auto;
+} */
+.App__left {
+  width: 100%;
+  margin: 50px 50px 50px 0;
+}
+.App__left__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.Subhead__cards {
+  display: inline-block;
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.App__right {
+  overflow: scroll;
+  height: 300px;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.TableData__table tr:nth-of-type(odd) {
+  background-color: lightgray;
+}
+
+@media (max-width: 860px) {
+  .App {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .TableData__table td {
+    width: 100%;
+    height: 2.5rem;
   }
 }
