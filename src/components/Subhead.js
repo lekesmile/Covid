@@ -57,7 +57,7 @@ const Subhead = () => {
       <div className="App__left">
         <div className="App__left__inner">
           <div>
-            <h3>covid 19</h3>
+            <h3 style={{ marginLeft: 5 }}>Covid 19</h3>
           </div>
           <div>
             <FormControl variant="outlined">
