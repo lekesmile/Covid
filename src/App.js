@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Subhead from "./components/Subhead";
 import LineChart from "./components/LineChart";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       </div>
       <Subhead />
       <LineChart />
+      <Footer />
     </div>
   );
 }
