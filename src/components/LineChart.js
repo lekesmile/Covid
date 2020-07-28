@@ -80,7 +80,7 @@ const LineChart = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className=" LineChart__div">
       <h5>Last 120days </h5>
       {data?.length > 0 && <Line data={data} />}
       <Line data={data1} />
