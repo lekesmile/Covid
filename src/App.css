@@ -1,9 +1,12 @@
+body {
+  background-color: whitesmoke;
+}
 .App {
   align-items: center;
 }
 .App__h1 {
   text-align: left;
-  margin: 30px 60px 100px 50px;
+  margin: 30px 60px 60px 50px;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -52,8 +55,10 @@
 .TableData__table td {
   width: 100%;
   height: 2rem;
+  border-spacing: 0;
 }
-.TableData__table tr:nth-of-type(odd) {
+
+.TableData__table tr:nth-of-type(even) {
   background-color: rgb(240, 236, 236);
 }
 .TableData__table tr:hover {
@@ -69,6 +74,25 @@
   min-height: 60px;
   text-align: center;
   margin-top: 25px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.Map__main {
+  width: 90%;
+  margin: 80px auto;
+}
+.map {
+  height: 500px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgb(0, 0, 0.5);
+}
+.map .leaflet-container {
+  height: 100%;
 }
 
 @media (max-width: 860px) {
@@ -77,6 +101,7 @@
   }
   .App__h1 {
     margin-bottom: 30px;
+    margin-left: 30px;
   }
   .container {
     display: flex;
